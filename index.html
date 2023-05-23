@@ -1,86 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Simo Studio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b0c2adba35.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    
-    <nav>
-      <div class="logo"><b>SimoStudio®</b></div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-        <div class="toggle_btn">
-        <i class="fa-solid fa-bars"></i>
+<div id="header">
+    <div class="container">
+        <nav>
+            <button data-text="Awesome" class="button">
+                <span class="actual-text">&nbsp;simostudio&nbsp;</span>
+                <span class="hover-text" aria-hidden="true">&nbsp;simostudio&nbsp;</span>
+            </button>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+        
+        <div class="header-text">
+            <p>Graphic & Web Designer</p>
+            <h1>Hi, I'm Ani From Albania</h1>
         </div>
+    </div>
+</div>
+<!-- --------about-------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a talented graphic and web designer from Albania who's passionate about creating beautiful and functional designs. While I'm not yet a graduate, I have a wealth of experience and knowledge in my field, and I'm confident that I can provide you with top-notch design services that will exceed your expectations. Let's work together to bring your vision to life!</p>
 
-      <div class="social-icons">
-        <a href="https://www.instagram.com/simostudio.al/"><img src="Ig-removebg-preview.png" alt="Instagram"></a>
-        <a href="https://twitter.com/SimoStudio_al"><img src="tw.png" alt="Twitter"></a>
-        <a href="https://www.pinterest.com/simostudios/"><img src="pnt.png" alt="Pinterest"></a>
-        <a href="https://www.linkedin.com/in/simo-studios-5a2019276/"><img src="link 2.png" alt="LinkedIn"></a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home">
-      <h1>Welcome to My Portfolio</h1>
-      <img src="Simo_Studio-removebg-preview.png" alt="Your Photo">
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="project">
-          <img src="Orange Modern Restaurant Menu Document A4.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Restaurant Gold , Gjirokastër</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">My Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Graphic</span><br>Designer</li>
+                        <li><span>Web</span><br>Designer</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="project">
-          <img src="FEEL THE Spring!.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>The BlackRose Pub , Gjirokastër</p>
+    </div>
+</div>
+<!-- --------services-------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Graphic Design</h2>
+                <p>A graphic designer is a creative professional who uses visual elements such as typography, images, and color to communicate messages and ideas.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>A web designer is someone who creates the visual layout and design of websites. They use their creativity and technical skills to produce aesthetically pleasing and user-friendly websites that meet the needs of their clients or customers.</p>
+                <a href="#">Learn more</a>
+            </div>
         </div>
-        <div class="project">
-          <img src="Peci.jpg" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>SuperMarket Peci , Gjirokastër</p>
+    </div>
+</div>
+
+<!-- --------portfolio-------- -->
+<div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work.1.png">
+                    <div class="layer">
+                        <h3>Restorant Gold, Gjirokastër</h3>
+                        <p>If you're looking for a cozy dining out experience that you'll never forget, then you've found the right place. </p>
+                        <a href="#"><i class="fa-solid fa-thumbs-up"></i></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work.2.png">
+                    <div class="layer">
+                        <h3>Hotel Moscopole, Ksamil</h3>
+                        <p>Moscopole in Ksamil is an excellent hotel with great service and is just a quick 5-minute walk away from the beautiful sea. It's the perfect place to stay for a relaxing vacation!</p>
+                        <a href="#"><i class="fa-solid fa-thumbs-up"></i></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work.3.png">
+                    <div class="layer">
+                        <h3>Resort Kerculla, Gjirokastër</h3>
+                        <p>The Kerculla Resort in Gjirokastër has a variety of activities like hiking, swimming, and horseback riding. It's the perfect place to unwind and enjoy nature.</p>
+                        <a href="#"><i class="fa-solid fa-thumbs-up"></i></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work.4.png">
+                    <div class="layer">
+                        <h3>SuperMarket Besi, Gjirokastër</h3>
+                        <p>Supermarket Besi, a premier shopping destination in the lively city of Gjirokastër!</p>
+                        <a href="#"><i class="fa-solid fa-thumbs-up"></i></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work.5.png">
+                    <div class="layer">
+                        <h3>The BlackRose Pub, Gjirokastër</h3>
+                        <p>The Blackrose Pub in Gjirokastër has a unique ambiance with a mix of modern and traditional decor. It's definitely a place to visit if you're looking for a chill night out.</p>
+                        <a href="#"><i class="fa-solid fa-thumbs-up"></i></a> 
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
         </div>
-      </div>
-    </section>
+</div>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>As a graphic and web designer, I specialize in creating visually appealing designs that help businesses and individuals communicate their message to their audience. With expertise in both print and digital media, I am able to create designs that are not only aesthetically pleasing, but also effective in achieving the desired results. Whether it's a logo, brochure, website, or social media graphic, I work closely with my clients to understand their needs and create designs that exceed their expectations..</p>
-    </section>
+<!-- --------contact-------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
+                 <div class="social-icons">
+                    <a href="https://www.instagram.com/simostudio.al/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.pinterest.com/simostudios/"><i class="fa-brands fa-square-pinterest"></i></a>           
+                    <a href="https://twitter.com/SimoStudio_al"><i class="fa-brands fa-square-twitter"></i></a>             
+                    <a href="https://www.linkedin.com/in/simo-studios-5a2019276/"><i class="fa-brands fa-linkedin"></i></a>
+                 </div>
+            </div>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-				<label for="email">Email:</label>
-				<input type="email" id="email" emri="email" required>
-				<label for="message">Your Message:</label>
-				<textarea id="message" emri="message" required></textarea>
-				<button type="submit">Send Message</button>
-			</form>
-    </section>
-  </main>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
 
-  <footer>
-    <p>&copy; 2023 Powered by Simo Studio. All rights reserved. | <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="contact.html">Contact information</a>
-    </p>
-  </footer>
+          <div class="copyright">
+            <p>&copy; 2023 Powered by Simo Studio. All rights reserved. <i class="fa-solid fa-heart"></i> | <a href="privacy.html">Privacy Policy</a></p>
+          </div>
+
+</div>
+
+
+<script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        } 
+
+</script>
+
+<script>
+
+        var sidemeu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemeu.style.right = "0"
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px"
+        }
+
+</script>
+
+</div>
 </body>
 </html>
