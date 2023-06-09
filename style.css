@@ -51,6 +51,10 @@ nav ul li a{
     position: relative;
 }
 
+h1{
+    font-size: clamp(40px, 8vw, 105px);
+}
+
 nav ul li a::after{
     content: '';
     width: 0;
